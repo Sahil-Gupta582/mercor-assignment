@@ -18,8 +18,6 @@ app.use(
 app.use(bodyParser.json({ limit: "50mb", parameterLimit: 100000 }));
 app.use(bodyParser.text({ limit: "50mb" }));
 
-app.use(express.static(path.join(__dirname, "public")));
-
 app.use("/getAnswers", gptController.getAnswer);
 
 app.listen(3000, () => {
