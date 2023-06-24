@@ -111,7 +111,7 @@ function clearResponse() {
 // }
 
 const getAnsFromGPT = async () => {
-  const url = "https://answer-me-gpt.vercel.app/getAnswers";
+  const url = "/getAnswers";
   const data = { text: result.innerHTML };
 
   const request = new XMLHttpRequest();
